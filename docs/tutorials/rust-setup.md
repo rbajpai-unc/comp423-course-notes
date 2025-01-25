@@ -49,7 +49,7 @@
     4. We will also add an another extension called rust-analyzer
     5. (A) Open the rust-tutorial folder by clicking file and then open folder
      
-    (B) Create a .devcontainer folder within your project and create a file within the .devcontainer directory called devcontainer.json.
+        (B) Create a .devcontainer folder within your project and create a file within the .devcontainer directory called devcontainer.json.
     6. This file configures your development environment and you should add 
         ``` 
         {
