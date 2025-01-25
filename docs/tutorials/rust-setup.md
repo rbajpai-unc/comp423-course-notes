@@ -81,6 +81,7 @@
     ```
 4. We will now push the changes us to the remote repository
     ```
+    cd ..
     git add .
     git commit -m "Finished Hello Comp423"
     git push -u origin main
