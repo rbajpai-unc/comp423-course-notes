@@ -79,6 +79,8 @@
     cargo build
     cargo run
     ```
+        !!! note
+            We use cargo build in order to create an executable that we can run. This allows for it run faster everytime we do build. Cargo run will compile and run your program immediately which is initially faster but slower when repeatedly running the same program.
 4. We will now push the changes us to the remote repository
     ```
     cd ..
