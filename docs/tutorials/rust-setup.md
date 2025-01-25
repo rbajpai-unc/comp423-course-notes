@@ -38,7 +38,8 @@
         ```
         git remote add origin https://github.com/<your-username>/Basic-Rust-Tutorial
         ```
-        Make sure to replace <your-username> with your git username
+        !!! note
+            Make sure to replace <your-username> with your git username
     6. We can now push our commit we made earlier with 
     ``` git push --set-upstream origin main```
 # Creating a Dev Container
@@ -57,6 +58,8 @@
                 "image": "mcr.microsoft.com/devcontainers/rust:1-1-bullseye"
         }
         ``` 
+        !!! note
+            This configuration file is important since it pulls the base image which contains Rust and adds it to the Dev Container. This specific configuration file creates a dev container named Rust which contains the base image.
     7. Now we will reopen the project within the Dev Container. Reopen the project by pressing ``` Ctrl+Shift+P (or Cmd+Shift+P on Mac) ``` and select Dev Containers: Reopen in Container
     8. Once the setup completes, open a new terminal and try running ``` rustc --version ```
     9. Ensure that the terminal outputs some version of Rust
@@ -65,16 +68,21 @@
 1.  Open the terminal and create a new project names Hello-Comp423 by running
     ```cargo new Hello-Comp423 --vcs none ```
 2. This should create a new directory called Hello-Comp423. Navigate to Hello-Comp423/src/main.rs where you should see code for a basic hello world. Change this to 
-```
-fn main() {
+    ```
+    fn main() {
     println!("Hello COMP423");
-}
-```
+    }
+    ```
 3. After that enter the new directory, build, and run the code:
     ```
     cd Hello-Comp423
     cargo build
     cargo run
     ```
-
+4. We will now push the changes us to the remote repository
+    ```
+    git add .
+    git commit -m "Finished Hello Comp423"
+    git push -u origin main
+    ```
         
