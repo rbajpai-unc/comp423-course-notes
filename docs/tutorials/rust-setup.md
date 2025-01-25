@@ -38,8 +38,8 @@
         ```
         git remote add origin https://github.com/<your-username>/Basic-Rust-Tutorial
         ```
-        !!! note
-            Make sure to replace <your-username> with your git username
+    !!! note
+        Make sure to replace <your-username> with your git username
     6. We can now push our commit we made earlier with 
     ``` git push --set-upstream origin main```
 # Creating a Dev Container
