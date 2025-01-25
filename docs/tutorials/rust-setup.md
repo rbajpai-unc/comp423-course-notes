@@ -61,4 +61,20 @@
     8. Once the setup completes, open a new terminal and try running ``` rustc --version ```
     9. Ensure that the terminal outputs some version of Rust
         ex: ```rustc 1.83.0 (90b35a623 2024-11-26)```
+# Creating the Hello COMP423 with Rust
+1.  Open the terminal and create a new project names Hello-Comp423 by running
+    ```cargo new Hello-Comp423 --vcs none ```
+2. This should create a new directory called Hello-Comp423. Navigate to Hello-Comp423/src/main.rs where you should see code for a basic hello world. Change this to 
+```
+fn main() {
+    println!("Hello COMP423");
+}
+```
+3. After that enter the new directory, build, and run the code:
+    ```
+    cd Hello-Comp423
+    cargo build
+    cargo run
+    ```
+
         
